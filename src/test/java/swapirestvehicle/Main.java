@@ -1,9 +1,9 @@
 package swapirestvehicle;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.*;
+//import static io.restassured.matcher.RestAssuredMatchers.*;
+//import static org.hamcrest.Matchers.*;
+//import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 // https://swapi.co/api/vehicles/
 import static org.junit.jupiter.api.Assertions.assertEquals;
