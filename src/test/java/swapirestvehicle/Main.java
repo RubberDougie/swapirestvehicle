@@ -26,13 +26,15 @@ public class Main {
 	@Test
 	public void secondTest() {
 		given().baseUri("https://swapi.co/api").contentType(ContentType.JSON).when().get("/vehicles/8/").then()
-				.assertThat().statusCode(200);
+				.assertThat().statusCode(200).log().all();
 	}
 
 	@Test
 	public void testKnownResponseContents() {
-		Response response = given().when().get("https://swapi.co/api/vehicles/4/");
+		Response response = given().log().all().when().get("https://swapi.co/api/vehicles/4/");
 		String name = response.jsonPath().get("name");
+		String headerValue = response.getHeaders().toString();
+		System.out.println(headerValue);
 		assertEquals("Sand Crawler", name);
 	}
 
