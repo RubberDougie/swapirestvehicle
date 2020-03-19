@@ -11,7 +11,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 @Execution(ExecutionMode.CONCURRENT)
-public class Main {
+public class SwapiRestVehicleTests {
 
 	/*
 	 * @BeforeAll public void commonSetUp() { // }
